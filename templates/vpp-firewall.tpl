@@ -24,7 +24,7 @@ spec:
                           values:
                             - cube4
       containers:
-        - name: sidecar-nse
+        - name: vppagent-firewall-nse
           image: raffaeletrani/vpp-test-common:prova
           imagePullPolicy: IfNotPresent
           env:
