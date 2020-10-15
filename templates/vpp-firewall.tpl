@@ -22,7 +22,7 @@ spec:
                         - key: kubernetes.io/hostname
                           operator: In
                           values:
-                            - cube4
+                            - cube2
       containers:
         - name: vppagent-firewall-nse
           image: raffaeletrani/vpp-test-common:prova
@@ -63,3 +63,4 @@ data:
     aclRules:
       "Allow ICMP": "action=reflect,icmptype=8"
       "Allow TCP": "action=reflect,tcplowport=5201,tcpupport=5201"
+      "Allow UDP": "action=reflect,udplowport=5201,udpupport=5201"
